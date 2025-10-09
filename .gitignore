@@ -1,0 +1,8 @@
+0-admin
+corrections
+daily.md
+**/maquettes/app/*
+!**/maquettes/helpers/*
+!**/maquettes/**/all.png
+pdf
+**/ui/all.png
