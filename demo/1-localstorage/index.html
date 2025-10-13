@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Vos éléments à stocker dans le navigateur via le localstorage
+        const items = ['lait', 'pain', 'viande']
+        const name = 'Glodie'
+        /** Ajouter un élément dans le localstorage par l'intermediaire de la fonction setItem()
+         * Attention dans le localstorage on ne stocke que des strings (la donnée doit être textuel pour transiter dans la couche réseau)
+         * Autrement dit si vous avez un objet ou un tableau, il faut utiliser la fonction JSON.stringify()
+         *  pour le transformer en string, cette opération se nomme sérialisation
+         */
+        localStorage.setItem('items', JSON.stringify(items))
+        localStorage.setItem('user', name)
+
+        /**
+         * Récupérer une info stockée depuis le localStorage via la fonction getItem()
+         * On récupère automatiquement un string
+         * pour manipuler un objet ou un tableau dans votre code, il faut transformer le string en objet JS 
+         * en utilisant la fonction JSON.parse(), on appelle cette opération desérialisation
+         */
+        const itemsFromLS = JSON.parse(localStorage.getItem("items")) // récupère un string qui a été transformé en tableau js avec JSON.parse()
+        const glodie = localStorage.getItem('user') // string glodie, pas besoin de déserialisation ici
+        console.log(itemsFromLS[0], glodie)
+    </script>
+</body>
+</html>

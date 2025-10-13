@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and  (min-width: 700px) {
+            /* ecran dont la taille est supérieur à 700px ie version desktop */
+            ul {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        body {
+            background-color: orange;
+        }
+        @media screen and  (max-width: 700px) {
+            /* Pour tous les écrans dont la largeur est inférieur à 700px ie Smartphone */
+            body {
+                background: green;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+</html>
