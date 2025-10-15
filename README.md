@@ -11,6 +11,15 @@ Le formateur joue à la fois le rôle de client, de Product Owner (responsable p
 - [**Commandes *Git***](https://git-scm.com/cheat-sheet)
 - [**Convention commit Angular**](https://www.conventionalcommits.org/en/v1.0.0/)
 
+##### Git course
+
+Pour ceux et celles qui ne connaissent pas git, je vous recommande fortement de suivre l'un des 4 cours proposés ci-dessous selon vos préférences (vidéo ou texte, avec des exemples et/ou exercices, etc.)
+
+- [Code academy estimation 4h](https://www.codecademy.com/learn/learn-git)
+- [W3schools](https://www.w3schools.com/git/default.asp?remote=github)
+- [Microsoft](https://learn.microsoft.com/en-us/training/modules/intro-to-git/)
+- [Gitbybit](https://gitbybit.com/)
+
 #### HTML
 
 - [Documentation *HTML*](https://www.w3schools.com/html/html_intro.asp)
